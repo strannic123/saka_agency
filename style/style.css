@@ -113,4 +113,55 @@ body {
   text-transform: capitalize;
 }
 
+.help {
+  margin-bottom: 15rem;
+}
+.help__title {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 8.3rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+.help__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 3rem 3rem;
+}
+.help__card {
+  grid-column: span 2;
+  padding: 0 0 0 2.2rem;
+}
+.help__card-logo {
+  margin-top: 2.5rem;
+}
+.help__card-logo img {
+  width: auto;
+  height: 3.3rem;
+}
+.help__card-title {
+  margin-top: 5.5rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+}
+.help__card-text {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  font-feature-settings: "salt" on, "liga" off;
+}
+.help__card-link {
+  display: inline-block;
+  margin-top: 5rem;
+  text-decoration: none;
+  color: #A1C5E9;
+  padding-right: 2.8rem;
+  background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+}
+
 /*# sourceMappingURL=style.css.map */
