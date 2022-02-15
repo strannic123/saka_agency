@@ -18,6 +18,9 @@ body {
   padding: 1.3rem 2.7rem;
   background-color: #4080BF;
   border-radius: 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .wrapper {
@@ -44,10 +47,34 @@ body {
 .header__item:not(:last-child) {
   margin-right: 4rem;
 }
-.header__link {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
+.intro {
+  margin-top: 6.2rem;
+}
+.intro__content {
+  width: 100%;
+  padding-top: 20.7rem;
+  padding-left: 36.3rem;
+  display: flex;
+  flex-direction: column;
+  background: url("/image/bg-intro.jpg") no-repeat center/cover;
+  align-items: start;
+  border-radius: 20px;
+}
+.intro__title {
+  font-weight: 800;
+  font-size: 6.1rem;
+  line-height: 9.2rem;
+}
+.intro__subtitle {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+}
+.intro__link {
+  margin-top: 3rem;
+  margin-bottom: 9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
