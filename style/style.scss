@@ -1,5 +1,11 @@
 @import "reset.css";
 
+
+$bgColor: #000;
+$bgIco: #A1C5E9;
+$bgBtn: #4080BF;
+$textColor: #fff;
+
 html {
   font-size: 62.5%; /* 10px */
 }
@@ -7,4 +13,68 @@ html {
 body {
   font-size: 1.8rem; /* 18px */
   font-family: 'Poppins', sans-serif;
+  background-color: $bgColor;
+  color: $textColor;
 }
+
+.link-btn {
+  text-decoration: none;
+  color: $textColor;
+  padding: 1.3rem 2.7rem;
+  background-color: $bgBtn;
+  border-radius: 1rem;
+}
+
+
+
+.wrapper {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+//start header
+.header {
+  padding-top: 1.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+  }
+
+  &__nav {
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: $textColor;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+}
+
+
+//end header
+
+
