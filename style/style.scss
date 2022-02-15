@@ -28,6 +28,7 @@ body {
   line-height: 27px;
 }
 
+//todo сделать что либо при наведении на ссылки-кнопки
 
 
 .wrapper {
@@ -113,8 +114,58 @@ body {
   }
 
 }
-
-
 //end section intro
+
+//start section about
+.about {
+
+
+  &__content {
+    margin: 15rem 0;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    margin-top: 4.1rem;
+  }
+
+  &__card {
+    grid-column: span 2;
+    display: flex;
+
+    &-logo {
+      margin-right: 4.2rem;
+      padding-top: 1rem;
+    }
+
+    &-info {
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 2.8rem;
+      line-height: 4.2rem;
+      text-transform: capitalize;
+    }
+
+    &-text {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 3.0rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+//end section about
 
 
