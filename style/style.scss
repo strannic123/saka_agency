@@ -13,6 +13,8 @@ html {
 body {
   font-size: 1.8rem; /* 18px */
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   background-color: $bgColor;
   color: $textColor;
 }
@@ -29,6 +31,14 @@ body {
 }
 
 //todo сделать что либо при наведении на ссылки-кнопки
+
+.link-arrow-right {
+  display: inline-block;
+  text-decoration: none;
+  color: $bgIco;
+  padding-right: 2.8rem;
+  background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+}
 
 
 .wrapper {
@@ -102,8 +112,6 @@ body {
 
   &__subtitle {
     margin-top: 1rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 38px;
   }
@@ -126,7 +134,6 @@ body {
   }
 
   &__title {
-    font-style: normal;
     font-weight: 800;
     font-size: 5rem;
     line-height: 7rem;
@@ -216,8 +223,6 @@ body {
 
     &-text {
       margin-top: 1rem;
-      font-style: normal;
-      font-weight: normal;
       font-size: 16px;
       line-height: 28px;
       font-feature-settings: 'salt' on, 'liga' off;
@@ -234,6 +239,45 @@ body {
     }
   }
 }
+
 //end section help
+
+//start section project
+.project {
+  margin-bottom: 15rem;
+
+  .project__content {
+  }
+
+  .project__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .project__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .project__link {
+
+  }
+
+  .project__cards {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem 3rem;
+  }
+
+  .project__card {
+    grid-column: span 2;
+  }
+}
+
+
+//end section project
 
 

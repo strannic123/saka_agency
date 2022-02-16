@@ -8,6 +8,8 @@ body {
   font-size: 1.8rem;
   /* 18px */
   font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   background-color: #000;
   color: #fff;
 }
@@ -21,6 +23,14 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
+}
+
+.link-arrow-right {
+  display: inline-block;
+  text-decoration: none;
+  color: #A1C5E9;
+  padding-right: 2.8rem;
+  background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
 }
 
 .wrapper {
@@ -67,8 +77,6 @@ body {
 }
 .intro__subtitle {
   margin-top: 1rem;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 38px;
 }
@@ -81,7 +89,6 @@ body {
   margin: 15rem 0;
 }
 .about__title {
-  font-style: normal;
   font-weight: 800;
   font-size: 5rem;
   line-height: 7rem;
@@ -149,8 +156,6 @@ body {
 }
 .help__card-text {
   margin-top: 1rem;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   font-feature-settings: "salt" on, "liga" off;
@@ -162,6 +167,29 @@ body {
   color: #A1C5E9;
   padding-right: 2.8rem;
   background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+}
+
+.project {
+  margin-bottom: 15rem;
+}
+.project .project__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.project .project__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 70px;
+}
+.project .project__cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem 3rem;
+}
+.project .project__card {
+  grid-column: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */
