@@ -156,8 +156,8 @@ body {
 }
 .help__card-text {
   margin-top: 1rem;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
   font-feature-settings: "salt" on, "liga" off;
 }
 .help__card-link {
@@ -179,8 +179,8 @@ body {
 }
 .project .project__title {
   font-weight: 800;
-  font-size: 50px;
-  line-height: 70px;
+  font-size: 5rem;
+  line-height: 7rem;
 }
 .project .project__cards {
   margin-top: 5rem;
@@ -190,6 +190,79 @@ body {
 }
 .project .project__card {
   grid-column: span 2;
+}
+
+.founder__title {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  text-align: center;
+}
+.founder__cards {
+  margin-top: 5rem;
+  display: flex;
+}
+.founder__cards-block-left {
+  margin-right: 2.8rem;
+}
+.founder__cards-block-left .founder__info {
+  margin-right: 1rem;
+}
+.founder__cards-block-right .founder__info {
+  margin-left: 1rem;
+}
+.founder .card-left-top {
+  margin-bottom: 2.5rem;
+}
+.founder__card {
+  display: flex;
+}
+.founder__card.card-left-top .founder__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.founder__card.card-left-bottom .founder__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  padding-top: 9rem;
+}
+.founder__card.card-right-top .founder__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+}
+.founder__card.card-right-bottom .founder__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding-top: 1.8rem;
+}
+.founder__card-name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+.founder__card-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.founder__cards-block-right {
+  margin-top: 6.8rem;
+  margin-bottom: 20rem;
+}
+.founder .card-right-top {
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

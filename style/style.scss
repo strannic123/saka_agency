@@ -223,8 +223,8 @@ body {
 
     &-text {
       margin-top: 1rem;
-      font-size: 16px;
-      line-height: 28px;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
       font-feature-settings: 'salt' on, 'liga' off;
     }
 
@@ -257,8 +257,8 @@ body {
 
   .project__title {
     font-weight: 800;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 5rem;
+    line-height: 7rem;
   }
 
   .project__link {
@@ -277,7 +277,109 @@ body {
   }
 }
 
-
 //end section project
 
+//start section founder
+.founder {
+  &__content {
+  }
 
+  &__title {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 7.5rem;
+    text-align: center;
+  }
+
+  &__cards {
+    margin-top: 5rem;
+    display: flex;
+  }
+
+  &__cards-block-left {
+    margin-right: 2.8rem;
+  }
+
+  &__cards-block-left .founder__info {
+    margin-right: 1rem;
+  }
+
+  &__cards-block-right .founder__info {
+    margin-left: 1rem;
+  }
+
+  .card-left-top {
+    margin-bottom: 2.5rem;
+  }
+
+  &__card {
+    display: flex;
+
+    &.card-left-top .founder__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      text-align: right
+    }
+
+    &.card-left-bottom .founder__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: right;
+      padding-top: 9rem;
+    }
+
+    &.card-right-top .founder__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      text-align: left;
+    }
+
+    &.card-right-bottom .founder__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      padding-top: 1.8rem;
+    }
+
+  }
+
+  &__card,
+  &__info {
+
+  }
+
+  &__card-name {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  &__card-text {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+
+  &__card-img {
+  }
+
+  &__cards-block-right {
+    margin-top: 6.8rem;
+    margin-bottom: 20rem;
+  }
+
+  .card-right-top {
+    margin-bottom: 4rem;
+  }
+
+}
+
+//end section founder
