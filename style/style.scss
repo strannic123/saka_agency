@@ -383,3 +383,112 @@ body {
 }
 
 //end section founder
+
+
+//start section customer
+.customer {
+  &__content {
+    margin-bottom: 20rem;
+    display: flex;
+  }
+
+  &__info {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 5.3rem;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 5.0rem;
+    line-height: 8.3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    font-feature-settings: 'salt' on, 'liga' off;
+    margin-top: 1rem;
+  }
+
+  &__slider {
+    max-width: 50%;
+    height: 100%;
+    background: #1E2028;
+    border-radius: 10px;
+  }
+
+  &__slide {
+    background: url("/image/svg/customer-slider-coma.svg") no-repeat right 44px top 34px;
+    padding-left: 2.6rem;
+    padding-right: 4.4rem;
+  }
+
+  &__slid-name-parent {
+    margin-top: 12.6rem;
+
+  }
+
+  &__slid-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__slid-image {
+    margin-top: 12.6rem;
+    margin-right: 2rem;
+  }
+
+  &__slid-pic {
+  }
+
+  &__slid-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__slid-desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  &__slid-text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+    font-feature-settings: 'salt' on, 'liga' off;
+    margin-top: 2rem;
+    margin-bottom: 11.6rem;
+  }
+}
+
+.wrapper-slider {
+
+}
+
+.slick-dots {
+  background: #1E2028;
+  bottom: 5.6rem;
+
+
+}
+
+.slick-dots li button:before {
+  font-size: 1rem;
+  color:#8E8F93;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before  {
+  color: #ffffff;
+  opacity: 1;
+}
+
+
+//end section customer
