@@ -25,6 +25,17 @@ body {
   line-height: 27px;
 }
 
+.header a:hover,
+.header a:active,
+.header a:visited {
+  opacity: 0.8;
+}
+
+.link-btn:hover,
+.link-btn:active {
+  background-color: #4073BF;
+}
+
 .link-arrow-right {
   display: inline-block;
   text-decoration: none;
@@ -165,8 +176,13 @@ body {
   margin-top: 5rem;
   text-decoration: none;
   color: #A1C5E9;
-  padding-right: 2.8rem;
-  background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+  padding-right: 3.8rem;
+  background: url("/image/svg/help_arrow-right.svg") no-repeat 95% center;
+  transition: all 0.2s;
+}
+.help__card-link:hover, .help__card-link:active, .help__card-link:visited {
+  opacity: 0.75;
+  background: url("/image/svg/help_arrow-right.svg") no-repeat 100% center;
 }
 
 .project {

@@ -30,7 +30,17 @@ body {
   line-height: 27px;
 }
 
-//todo сделать что либо при наведении на ссылки-кнопки
+.header a:hover,
+.header a:active,
+.header a:visited {
+  opacity: 0.8;
+}
+
+.link-btn:hover,
+.link-btn:active {
+  //background-color: #407AC4;
+  background-color: #4073BF;
+}
 
 .link-arrow-right {
   display: inline-block;
@@ -39,7 +49,6 @@ body {
   padding-right: 2.8rem;
   background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
 }
-
 
 .wrapper {
   max-width: 111rem;
@@ -229,16 +238,25 @@ body {
     }
 
     &-link {
-      //todo сделать движение стрелок
       display: inline-block;
       margin-top: 5rem;
       text-decoration: none;
       color: $bgIco;
-      padding-right: 2.8rem;
-      background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+      padding-right: 3.8rem;
+      background: url("/image/svg/help_arrow-right.svg") no-repeat  95% center;
+      transition: all .2s;
+    }
+
+    &-link:hover,
+    &-link:active,
+    &-link:visited {
+      opacity: 0.75;
+      background: url("/image/svg/help_arrow-right.svg") no-repeat 100%  center;
+
     }
   }
 }
+
 
 //end section help
 
