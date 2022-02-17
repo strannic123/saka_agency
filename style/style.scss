@@ -481,14 +481,202 @@ body {
 
 .slick-dots li button:before {
   font-size: 1rem;
-  color:#8E8F93;
+  color: #8E8F93;
   opacity: 1;
 }
 
-.slick-dots li.slick-active button:before  {
+.slick-dots li.slick-active button:before {
   color: #ffffff;
   opacity: 1;
 }
 
-
 //end section customer
+
+
+//start section business
+.business {
+  &__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 80px;
+  }
+
+  &__link {
+    margin-top: 3.6rem;
+  }
+
+  &__result {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    min-width: 23.7rem;
+    border-left: 2px solid $textColor;
+    border-right: 2px solid $textColor;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &__item-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+  }
+
+  &__item-desc {
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.link-btn {
+}
+
+//start section business
+
+//start footer
+.footer {
+  &__content {
+    margin: 9.8rem 0 3.2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__saka {
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__saka-title {
+    display: block;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+  }
+
+  &__saka-desc {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 2rem;
+  }
+
+  &__saka-icons {
+  }
+
+  &__saka-icon {
+    margin-top: 2.7rem;
+  }
+
+  &__nav {
+    max-width: 33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+  }
+
+  &__company {
+  }
+
+  &__company-list {
+  }
+
+  &__company-item {
+  }
+
+  &__company-link {
+    text-decoration: none;
+  }
+
+  &__support {
+  }
+
+  &__support-list {
+  }
+
+  &__support-item {
+  }
+
+  &__support-link {
+    text-decoration: none;
+  }
+
+  &__touch {
+    max-width: 33%;
+  }
+
+  &__touch-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $textColor;
+  }
+}
+
+.link-title {
+}
+
+.footer__company-link,
+.footer__support-link,
+.footer__saka-icon-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $textColor;
+}
+
+.footer__company-item:first-child,
+.footer__support-item:first-child {
+  margin-bottom: 2rem;
+}
+
+.link-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $textColor;
+}
+
+.footer__input {
+  margin-top: 1.8rem;
+  background:  url("/image/svg/footer-input-send.svg") no-repeat right 1.2rem center #41434A;
+  border-radius: 8px;
+  color: #8E8F93;
+  height: 4rem;
+  border: none;
+}
+
+.footer__input::placeholder {
+  color: #8E8F93;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a:visited {
+  opacity: 0.7;
+}
+
+//end footer
+
+
