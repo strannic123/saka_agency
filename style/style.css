@@ -50,11 +50,16 @@ body {
 }
 
 .header {
-  padding-top: 1.9rem;
+  padding: 1.9rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #000;
+  z-index: 2;
 }
 .header__list {
   display: flex;
@@ -68,6 +73,33 @@ body {
 .header__item:not(:last-child) {
   margin-right: 4rem;
 }
+.header__burger {
+  display: none;
+  padding-bottom: 1.9rem;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  width: 4rem;
+  height: 2.8rem;
+}
+.header__burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+}
+.header__burger-line-first {
+  top: 0;
+}
+.header__burger-line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__burger-line-third {
+  bottom: 0;
+}
+
 .intro {
   margin-top: 6.2rem;
 }
@@ -489,6 +521,71 @@ body {
 .footer a:active,
 .footer a:visited {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 1070px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+
+  .header {
+    padding: 3.9rem 0;
+    z-index: 9;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    padding: 13.5rem;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+  }
+  .header__nav-active {
+    transform: translateX(0%);
+  }
+  .header__nav-close {
+    width: 4rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .header__nav-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+  }
+  .header__nav-line:first-child {
+    transform: translateY(1px) rotate(45deg);
+  }
+  .header__nav-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .header__list {
+    flex-direction: column;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .header__item {
+    margin-right: 0;
+  }
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
