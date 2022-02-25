@@ -52,6 +52,7 @@ body {
 .wrapper {
   max-width: 111rem;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 //start header
@@ -67,21 +68,10 @@ body {
   background: $bgColor;
   z-index: 2;
 
-  &__logo {
-  }
-
-  &__nav {
-
-  }
-
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  &__item {
-
   }
 
   &__item a {
@@ -91,10 +81,6 @@ body {
 
   &__item:not(:last-child) {
     margin-right: 4rem;
-  }
-
-  &__link {
-
   }
 
   &__burger {
@@ -140,7 +126,7 @@ body {
   &__content {
     width: 100%;
     padding-top: 20.7rem;
-    padding-left: 36.3rem;
+    padding-left: 31.3rem;
     display: flex;
     flex-direction: column;
     background: url("/image/bg-intro.jpg") no-repeat center/cover;
@@ -173,7 +159,6 @@ body {
 //start section about
 .about {
 
-
   &__content {
     margin: 15rem 0;
   }
@@ -198,9 +183,6 @@ body {
     &-logo {
       margin-right: 4.2rem;
       padding-top: 1rem;
-    }
-
-    &-info {
     }
 
     &-title {
@@ -279,7 +261,7 @@ body {
       text-decoration: none;
       color: $bgIco;
       padding-right: 3.8rem;
-      background: url("/image/svg/help_arrow-right.svg") no-repeat  95% center;
+      background: url("/image/svg/help_arrow-right.svg") no-repeat 95% center;
       transition: all .2s;
     }
 
@@ -287,7 +269,7 @@ body {
     &-link:active,
     &-link:visited {
       opacity: 0.75;
-      background: url("/image/svg/help_arrow-right.svg") no-repeat 100%  center;
+      background: url("/image/svg/help_arrow-right.svg") no-repeat 100% center;
 
     }
   }
@@ -300,34 +282,35 @@ body {
 .project {
   margin-bottom: 15rem;
 
-  .project__content {
-  }
-
-  .project__info {
+  &__info {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
   }
 
-  .project__title {
+  &__title {
     font-weight: 800;
     font-size: 5rem;
     line-height: 7rem;
   }
 
-  .project__link {
-
+  &__link {
+    padding-bottom: 1.2rem;
   }
 
-  .project__cards {
+  &__cards {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem 3rem;
   }
 
-  .project__card {
+  &__card {
     grid-column: span 2;
+
+    & img {
+      width: 100%;
+    }
   }
 }
 
@@ -335,8 +318,6 @@ body {
 
 //start section founder
 .founder {
-  &__content {
-  }
 
   &__title {
     font-weight: 800;
@@ -368,6 +349,7 @@ body {
 
   &__card {
     display: flex;
+
 
     &.card-left-top .founder__info {
       display: flex;
@@ -405,11 +387,6 @@ body {
 
   }
 
-  &__card,
-  &__info {
-
-  }
-
   &__card-name {
     font-weight: 500;
     font-size: 1.8rem;
@@ -420,9 +397,6 @@ body {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2.6rem;
-  }
-
-  &__card-img {
   }
 
   &__cards-block-right {
@@ -447,7 +421,7 @@ body {
   }
 
   &__info {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -456,6 +430,7 @@ body {
   }
 
   &__title {
+    width: 37rem;
     font-weight: 800;
     font-size: 5.0rem;
     line-height: 8.3rem;
@@ -469,7 +444,7 @@ body {
   }
 
   &__slider {
-    max-width: 50%;
+    width: 50%;
     height: 100%;
     background: #1E2028;
     border-radius: 10px;
@@ -497,9 +472,6 @@ body {
     margin-right: 2rem;
   }
 
-  &__slid-pic {
-  }
-
   &__slid-name {
     font-weight: 600;
     font-size: 1.8rem;
@@ -522,15 +494,9 @@ body {
   }
 }
 
-.wrapper-slider {
-
-}
-
 .slick-dots {
   background: #1E2028;
   bottom: 5.6rem;
-
-
 }
 
 .slick-dots li button:before {
@@ -564,7 +530,7 @@ body {
     margin-bottom: 5rem;
     display: flex;
     flex-wrap: wrap;
-
+    gap: 3rem;
   }
 
   &__item {
@@ -573,19 +539,12 @@ body {
     border-right: 2px solid $textColor;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 3rem;
-  }
-
   &__item-title {
     font-weight: bold;
     font-size: 28px;
     line-height: 40px;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
-  }
-
-  &__item-desc {
   }
 }
 
@@ -597,55 +556,54 @@ body {
   text-align: center;
 }
 
-.link-btn {
-}
 
 //start section business
 
 //start footer
 .footer {
   &__content {
-    margin: 9.8rem 0 3.2rem 0;
     display: flex;
+    margin: 5rem auto;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 3rem;
+
+    @media screen and (max-width: 609px) {
+      justify-content: revert;
+    }
   }
 
   &__saka {
-    max-width: 33%;
-    display: flex;
-    flex-direction: column;
-
   }
 
   &__saka-title {
-    display: block;
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 1rem;
   }
 
   &__saka-desc {
-    display: block;
     font-size: 14px;
     line-height: 26px;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
   &__saka-icons {
+    margin-top: 2.7rem;
+
+    & a {
+      color: transparent;
+    }
+  }
+
+  &__saka-icon-link {
   }
 
   &__saka-icon {
-    margin-top: 2.7rem;
   }
 
-  &__nav {
-    max-width: 33%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: inherit;
+  &__nav-company {
   }
 
   &__company {
@@ -655,10 +613,34 @@ body {
   }
 
   &__company-item {
+
+    & a {
+      text-decoration: none;
+    }
   }
 
   &__company-link {
-    text-decoration: none;
+  }
+
+  &__company-link,
+  &__support-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $textColor;
+
+  }
+
+  &__company-item:not(:first-child),
+  &__support-item:not(:first-child) {
+    margin-top: 1rem;
+
+
+  }
+
+
+
+  &__nav-support {
   }
 
   &__support {
@@ -668,14 +650,16 @@ body {
   }
 
   &__support-item {
+
+    & a {
+      text-decoration: none;
+    }
   }
 
   &__support-link {
-    text-decoration: none;
   }
 
   &__touch {
-    max-width: 33%;
   }
 
   &__touch-title {
@@ -684,64 +668,95 @@ body {
     line-height: 27px;
     color: $textColor;
   }
+
+  &__input {
+    margin-top: 1.8rem;
+    width: 25.5rem;
+    padding: 1rem 0 1rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    color: $textColor;
+    background: #41434A url("/image/svg/footer-input-send.svg") no-repeat top 1rem right 1.3rem;
+  }
+
+  &__input::placeholder {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #D9DBE1;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
 }
 
 .link-title {
-}
-
-.footer__company-link,
-.footer__support-link,
-.footer__saka-icon-link {
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  color: $textColor;
-}
-
-.footer__company-item:first-child,
-.footer__support-item:first-child {
-  margin-bottom: 2rem;
-}
-
-.link-title {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: $textColor;
+  margin-bottom: 2rem;
 }
 
-.footer__input {
-  margin-top: 1.8rem;
-  background:  url("/image/svg/footer-input-send.svg") no-repeat right 1.2rem center #41434A;
-  border-radius: 8px;
-  color: #8E8F93;
-  height: 4rem;
-  border: none;
-}
-
-.footer__input::placeholder {
-  color: #8E8F93;
-  padding: 1.2rem 0 1.2rem 1.2rem;
-}
-
-.footer a:hover,
-.footer a:active,
-.footer a:visited {
+.footer__saka-icon-link:hover,
+.footer__saka-icon-link:active,
+.footer__saka-icon-link:visited,
+a.footer__company-link:hover,
+a.footer__company-link:active,
+a.footer__company-link:visited,
+a.footer__support-link:hover,
+a.footer__support-link:active,
+a.footer__support-link:visited {
   opacity: 0.7;
 }
+
 
 //end footer
 
 //start media
-@media screen and (max-width: 1070px){
-  .wrapper {
-    padding: 0 25px;
+@media screen and (max-width: 1150px) {
+  .project {
+
+    &__info {
+      justify-content: space-around !important;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+
+    &__link {
+      padding-left: 2.5rem;
+      @media screen and (max-width: 598px) {
+        margin-top: 3.5rem;
+      }
+    }
+
+    &__cards {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__card img {
+      width: 100%;
+    }
   }
 
+}
+
+@media screen and (max-width: 1070px) {
   .header {
-    padding: 3.9rem 0;
+    padding: 3.9rem 0 3.9rem 2.5rem;
     z-index: 9;
+    justify-content: flex-start;
 
     &__link {
       display: none;
@@ -804,18 +819,390 @@ body {
 
     }
 
-    .header__item:not(:last-child) {
-
-    }
-
     &__burger {
       display: block;
       cursor: pointer;
     }
   }
 
+  .customer {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__info {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5rem;
+      margin-right: 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+      line-height: 6rem;
+    }
 
 
+    &__slider {
+      width: 100%;
+    }
+  }
+
+  .business {
+
+    &__title {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 985px) {
+  .help {
+
+    &__title {
+      font-size: 4rem;
+      line-height: 6.3rem;
+    }
+
+    &__cards {
+      grid-gap: 3rem 1rem;
+    }
+
+    &__card {
+      grid-column: span 3;
+    }
+  }
+
+  .founder {
+
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-block-left {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .founder__card.card-right-top .founder__info {
+    margin-top: 1.5rem;
+  }
+
+  .card-left-top, .card-left-bottom {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .intro {
+    margin-top: 3.2rem;
+
+    &__content {
+      padding: 11rem;
+      align-items: center;
+    }
+  }
+
+  .about {
+
+    &__title {
+      text-align: center;
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  .founder {
+
+    &__title {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+
+    &__content {
+      margin: 10rem 0;
+    }
+
+    &__card {
+      grid-column: span 4;
+    }
+  }
+
+  .help {
+    margin-bottom: 10rem;
+  }
+
+  .project {
+    margin-bottom: 10rem;
+
+    &__title {
+      font-size: 3rem;
+      line-height: 5rem;
+    }
+  }
+
+  .founder__cards-block-right {
+    margin-top: 1.8rem;
+    margin-bottom: 10rem;
+  }
+
+  .customer {
+
+    &__content {
+      margin-bottom: 10rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      line-height: 5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      line-height: 3.3rem;
+    }
+  }
+
+  .business {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__item {
+      border: 2px solid $textColor;
+      border-radius: 3px;
+      padding: 1rem;
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 820px) {
+  .business {
+
+    &__result {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .header {
+
+    &__nav {
+      padding: 8.5rem;
+    }
+
+    &__list {
+      font-size: 4rem;
+      line-height: 4.2rem;
+    }
+  }
+
+  .intro {
+    margin-top: 2.2rem;
+
+    &__content {
+      padding: 6rem;
+    }
+
+    &__title {
+      font-size: 4.1rem;
+      line-height: 6.2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+      line-height: 3.5rem;
+    }
+
+    &__link {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__card {
+
+      &-title {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+
+      &-text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .help {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 5.3rem;
+    }
+
+    &__card {
+      grid-column: span 6;
+
+      &-title {
+        margin-top: 2.5rem
+      }
+
+      &-link {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .founder {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .founder {
+
+    &__card {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  .founder__cards-block-left .founder__info {
+    margin-bottom: 1.5rem;
+  }
+
+  .founder__card.card-left-bottom .founder__info {
+    padding-top: 0;
+  }
+
+
+
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+
+    &__logo a img {
+      width: 142px;
+    }
+
+    &__burger {
+      right: 2rem;
+    }
+  }
+
+  .intro {
+
+    &__content {
+      padding: 4rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+  .about {
+
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &__card {
+
+      &-logo {
+        margin-right: 3rem;
+      }
+
+      &-title {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+
+      &-text {
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+      }
+    }
+
+
+  }
+
+  .help {
+
+    &__title {
+      font-size: 2rem;
+      line-height: 4.3rem;
+    }
+
+    &__card {
+
+      &-title {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .business {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .header {
+
+    &__nav {
+      padding: 4.5rem;
+    }
+
+    &__list {
+      font-size: 3rem;
+    }
+  }
 }
 
 //end media
