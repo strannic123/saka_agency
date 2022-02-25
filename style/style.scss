@@ -53,7 +53,7 @@ body {
   text-decoration: none;
   color: $bgIco;
   padding-right: 2.8rem;
-  background: url("/image/svg/help_arrow-right.svg") no-repeat right center;
+  background: url("./image/svg/help_arrow-right.svg") no-repeat right center;
 }
 
 .wrapper {
@@ -155,7 +155,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background: url("/image/bg-intro.jpg") no-repeat center/cover;
+    background: url("./image/bg-intro.jpg") no-repeat center/cover;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -299,7 +299,7 @@ body {
       text-decoration: none;
       color: $bgIco;
       padding-right: 3.8rem;
-      background: url("/image/svg/help_arrow-right.svg") no-repeat 95% center;
+      background: url("./image/svg/help_arrow-right.svg") no-repeat 95% center;
       -webkit-transition: all .2s;
       -o-transition: all .2s;
       transition: all .2s;
@@ -309,7 +309,7 @@ body {
     &-link:active,
     &-link:visited {
       opacity: 0.75;
-      background: url("/image/svg/help_arrow-right.svg") no-repeat 100% center;
+      background: url("./image/svg/help_arrow-right.svg") no-repeat 100% center;
 
     }
   }
@@ -552,7 +552,7 @@ body {
   }
 
   &__slide {
-    background: url("/image/svg/customer-slider-coma.svg") no-repeat right 44px top 34px;
+    background: url("./image/svg/customer-slider-coma.svg") no-repeat right 44px top 34px;
     padding-left: 2.6rem;
     padding-right: 4.4rem;
   }
@@ -766,7 +766,7 @@ body {
     border: none;
     border-radius: 8px;
     color: $textColor;
-    background: #41434A url("/image/svg/footer-input-send.svg") no-repeat top 1rem right 1.3rem;
+    background: #41434A url("./image/svg/footer-input-send.svg") no-repeat top 1rem right 1.3rem;
   }
 
   &__input::-webkit-input-placeholder {
