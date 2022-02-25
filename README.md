@@ -1,6 +1,6 @@
 # landing page
 
-## Saka Agency
+## SakaAgency
 
 ### Верстка макета из figma на scss.
 
