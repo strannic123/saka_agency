@@ -574,9 +574,6 @@ body {
     }
   }
 
-  &__saka {
-  }
-
   &__saka-title {
     font-weight: 800;
     font-size: 24px;
@@ -597,29 +594,11 @@ body {
     }
   }
 
-  &__saka-icon-link {
-  }
-
-  &__saka-icon {
-  }
-
-  &__nav-company {
-  }
-
-  &__company {
-  }
-
-  &__company-list {
-  }
-
   &__company-item {
 
     & a {
       text-decoration: none;
     }
-  }
-
-  &__company-link {
   }
 
   &__company-link,
@@ -634,19 +613,6 @@ body {
   &__company-item:not(:first-child),
   &__support-item:not(:first-child) {
     margin-top: 1rem;
-
-
-  }
-
-
-
-  &__nav-support {
-  }
-
-  &__support {
-  }
-
-  &__support-list {
   }
 
   &__support-item {
@@ -654,12 +620,6 @@ body {
     & a {
       text-decoration: none;
     }
-  }
-
-  &__support-link {
-  }
-
-  &__touch {
   }
 
   &__touch-title {
